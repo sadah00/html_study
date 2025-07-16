@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="fullname">Full Name*</label><br>
+        <input type="text" name="fullname" id="fullname" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" required><br>
+        <label for="">Phone Number*</label><br>
+        <input type="tel" placeholder="10-digit number" required ><br>
+        <label for="date of Birth">Date of Birth*</label><br>
+        <input type="date" name="date of Birth" id="date of birth"><br>
+        <label for="">Gender*</label><br>
+        <label for="male">Male</label>
+        <input type="radio"name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Address Details</legend>
+        <label for="country">Country*</label><br>
+        <select name="country" id="country">
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Rwanda">Rwanda</option>
+        </select><br>
+        <label for="city">City*</label><br>
+        <input type="text" placeholder="Enter City" required name="city" id="city"><br>
+        <label for="postal code">Postal Code*</label><br>
+        <input type="text" name="postal code" id="postal code"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Qualifications</legend>
+        <label for="highest qualification">Highest Qualification*</label><br>
+        <select name="Select Qualification" id="highest qualification">
+            <option value="diploma">Diploma</option>
+            <option value="bachelor degree">Bachelor's Degree</option>
+            <option value="master degree">Master's Degree</option>
+            <option value="phd">PhD</option>
+        </select><br>
+        <label for="">Upload Resume (PDF Only)*</label><br>
+        <input type="file" required><br>
+        <label for="">Years of experience*</label><br>
+        <input type="number" required><br>
+        <label for="">Skills(select at least one)</label><br>
+        <label for="">HTML</label>
+        <input type="checkbox" name="skills">
+        <label for="">CSS</label>
+        <input type="checkbox" name="skills">
+        <label for="">JavaScript</label>
+        <input type="checkbox" name="skills">
+        <label for="">Python</label>
+        <input type="checkbox" name="skills"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Availability</legend>
+        <label for="">Preferred Job Role*</label><br>
+        <input type="text" required><br>
+        <label for="">Willing to Relocate*</label><br>
+        <select name="relocate" id="">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+        <label for="startdate">Available Start Date*</label><br>
+        <input type="date" name="startdate" id="startdate" min="2025-08-01" required><br>
+        <label for="">Expected Salary*</label><br>
+        <input type="number" required><br>
+        </fieldset>
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form"><br>
+
+    </form>
+</body>
+</html>
